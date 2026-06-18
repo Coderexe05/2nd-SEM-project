@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Interface Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Navigation -->
+    <header class="nav-main">
+        <div class="nav-left">
+            <div class="nav-logo border-hover">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+            </div>
+            <div class="nav-location border-hover">
+                <span class="location-icon">📍</span>
+                <div class="location-text">
+                    <span class="line-1">Deliver to</span>
+                    <span class="line-2">India</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-fill">
+            <div class="nav-search">
+                <select class="search-dropdown">
+                    <option value="all">All</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon">
+                <button class="search-icon">🔍</button>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="nav-language border-hover">
+                <span>EN 🌐</span>
+            </div>
+            <div class="nav-account border-hover">
+                <span class="line-1">Hello, sign in</span>
+                <span class="line-2">Account & Lists ▾</span>
+            </div>
+            <div class="nav-orders border-hover">
+                <span class="line-1">Returns</span>
+                <span class="line-2">& Orders</span>
+            </div>
+            <div class="nav-cart border-hover">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-count">0</span>
+                <span class="line-2">Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sub Navigation Belt -->
+    <nav class="nav-belt">
+        <div class="belt-menu border-hover">
+            <span>☰ All</span>
+        </div>
+        <div class="belt-links">
+            <a href="#" class="border-hover">Today's Deals</a>
+            <a href="#" class="border-hover">Customer Service</a>
+            <a href="#" class="border-hover">Registry</a>
+            <a href="#" class="border-hover">Gift Cards</a>
+            <a href="#" class="border-hover">Sell</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Banner with Fade -->
+        <div class="hero-banner"></div>
+
+        <!-- Product Cards Grid -->
+        <div class="content-grid">
+            
+            <!-- Card Type 1: Single Image -->
+            <div class="grid-card">
+                <h2>Gaming accessories</h2>
+                <div class="card-image single-image" style="background-image: url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=500');"></div>
+                <a href="#">See more</a>
+            </div>
+
+            <!-- Card Type 2: 2x2 Multi-Image -->
+            <div class="grid-card">
+                <h2>Refresh your space</h2>
+                <div class="quad-grid">
+                    <div class="quad-item">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=200" alt="Dining">
+                        <span>Dining</span>
+                    </div>
+                    <div class="quad-item">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=200" alt="Home">
+                        <span>Home</span>
+                    </div>
+                    <div class="quad-item">
+                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=200" alt="Kitchen">
+                        <span>Kitchen</span>
+                    </div>
+                    <div class="quad-item">
+                        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=200" alt="Bath">
+                        <span>Health & Beauty</span>
+                    </div>
+                </div>
+                <a href="#">See more</a>
+            </div>
+
+            <!-- Card Type 1: Single Image -->
+            <div class="grid-card">
+                <h2>Electronics</h2>
+                <div class="card-image single-image" style="background-image: url('https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=500');"></div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <!-- Card Type 1: Single Image -->
+            <div class="grid-card">
+                <h2>Shop Laptops & Tablets</h2>
+                <div class="card-image single-image" style="background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=500');"></div>
+                <a href="#">See more</a>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

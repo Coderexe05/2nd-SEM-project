@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eaeded; /* Classic Amazon Gray Background */
+}
+
+/* --- Global Nav Styles --- */
+.border-hover {
+    border: 1px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.border-hover:hover {
+    border: 1px solid white;
+}
+
+.line-1 {
+    font-size: 0.75rem;
+    color: #ccc;
+    display: block;
+}
+
+.line-2 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+
+/* --- Main Navigation (#131921) --- */
+.nav-main {
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    height: 60px;
+    gap: 15px;
+}
+
+.nav-logo img {
+    width: 100px;
+    margin-top: 10px;
+    filter: brightness(0) invert(1); /* Makes the black logo white */
+}
+
+.nav-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-fill {
+    flex-grow: 1;
+}
+
+.nav-search {
+    display: flex;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-dropdown {
+    background-color: #f3f3f3;
+    border: 1px solid #cdcdcd;
+    border-right: none;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding-left: 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    background-color: #febd69;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.search-icon:hover {
+    background-color: #f3a847;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.cart-icon {
+    font-size: 2rem;
+}
+
+.cart-count {
+    color: #f08804;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+
+/* --- Sub Navigation Belt (#232f3e) --- */
+.nav-belt {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    font-size: 0.85rem;
+    gap: 15px;
+}
+
+.belt-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* --- Main Content & Hero Banner --- */
+.main-content {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero-banner {
+    /* Amazon uses a gradient mask so the bottom of the image fades into the background color */
+    background-image: 
+        linear-gradient(to bottom, rgba(234, 237, 237, 0) 50%, rgba(234, 237, 237, 1) 100%),
+        url('https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?q=80&w=2070');
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    width: 100%;
+}
+
+/* --- Bento Box Grid --- */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: -120px; /* Pulls the grid up over the hero image */
+    z-index: 10;
+    position: relative;
+}
+
+.grid-card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+}
+
+.grid-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #0f1111;
+}
+
+.grid-card a {
+    color: #007185;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-top: auto;
+}
+
+.grid-card a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Single Image Card */
+.single-image {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+/* 2x2 Image Card (Quad Grid) */
+.quad-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.quad-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.quad-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.quad-item span {
+    font-size: 0.75rem;
+    color: #0f1111;
+}
